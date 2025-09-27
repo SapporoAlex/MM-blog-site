@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>MikeMatei.com</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -12,7 +13,7 @@
     <a href="/index.html"><img class="nav-logo" src="/images/bg-kv-01.png"></a>
     <div class="nav-right">
       <a href="/about-me.html"><div class="button-red">About</div></a>
-      <a href="https://mike-matei.creator-spring.com/"><div class="button-green">Shop</div></a>
+      <a href="https://mike-matei.creator-spring.com/" target="_blank" rel="noopener noreferrer"><div class="button-green">Shop</div></a>
       <a href="/gamesbeaten.html"><div class="button-blue">Games</div></a>
     </div>
   </nav>
@@ -44,14 +45,14 @@
               <i class="fab fa-youtube"></i></div>
             </a>
            
-            <a href="https://mike-matei.creator-spring.com/"><div class="button-cta">BUY A SHIRT OR MUG</div></a></div>
+            <a href="https://mike-matei.creator-spring.com/" target="_blank" rel="noopener noreferrer"><div class="button-cta">BUY A SHIRT OR MUG</div></a></div>
 
 
           </div>
         </div>
       </div>
 
-  <section class="blog-list">
+  <section class="blog-list" id="blog-list">
 
 
       <div class="container-blog">
@@ -69,7 +70,7 @@
 
         <div class="blog-grid">
 
-          <a href="/blog/tmnt.html">
+          <a href="./articles/article_mytmntmariopaintanimationaretrospective.html">
           <div class="blog-item">
             <div class="article-link-img-area"><img src="/images/thumb-tmnt-01.webp"></div>
             <div class="article-link-text-area">
@@ -80,7 +81,7 @@
           </div>
           </a>
 
-          <a href="/blog/tmnt.html">
+          <a href="./articles/article_monsterparty.html">
           <div class="blog-item">
             <div class="article-link-img-area"><img src="/images/thumb-monsterparty-01.webp"></div>
             <div class="article-link-text-area">
@@ -349,9 +350,17 @@
 
       </div>
   </section>
-
+      <button id="backToTop">
+        <div class="up-symbol">
+          <div class="up-triangle"></div>
+          <div class="up-stem"></div>
+          <div class="up-dash"></div>
+          <div class="up-text">TOP</div>
+        </div>
+      </button>
 
   </main>
+
 
   <footer class="footer">
   <p>Mike Matei</p>
@@ -364,10 +373,10 @@
     <i class="fab fa-youtube"></i></div>
   </a>
 
-  <a href="https://mike-matei.creator-spring.com/"><div class="button-cta">BUY A SHIRT OR MUG</div></a>
+  <a href="https://mike-matei.creator-spring.com/" target="_blank" rel="noopener noreferrer"><div class="button-cta">BUY A SHIRT OR MUG</div></a>
   </div>
 
 </footer>
-  <script src="/js/main.js"></script>
+  <script src="/js/main.min.js"></script>
 </body>
 </html>
