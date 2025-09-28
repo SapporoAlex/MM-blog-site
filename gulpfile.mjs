@@ -17,7 +17,8 @@ const paths = {
   styles: { src: 'src/scss/**/*.scss', dest: 'dist/css/' },
   pages: { src: 'src/views/pages/**/*.ejs', dest: 'dist/' },
   partials: { src: 'src/views/partials/**/*.ejs' },
-  scripts: { src: 'src/js/**/*.js', dest: 'dist/js/' }
+  scripts: { src: 'src/js/**/*.js', dest: 'dist/js/' },
+  articles: { src: 'src/views/articles/**/*.ejs', dest: 'dist/articles' },
 };
 
 // SCSS → CSS
@@ -52,6 +53,16 @@ export function pagesTask() {
     .pipe(browserSync.stream());
 }
 
+// EJS articles → HTML
+export function articlesTask() {
+  return src(paths.articles.src)
+    .pipe(plumber())
+    .pipe(ejs({}, {}, { ext: '.html' }))
+    .pipe(rename({ extname: '.html' }))
+    .pipe(dest(paths.articles.dest))
+    .pipe(browserSync.stream());
+}
+
 // Watch + BrowserSync
 export function watchTask() {
   browserSync.init({
@@ -62,10 +73,11 @@ export function watchTask() {
   watch(paths.styles.src, stylesTask);
   watch(paths.scripts.src, scriptsTask);
   watch(paths.pages.src, pagesTask);
+  watch(paths.articles.src, articlesTask);
   watch(paths.partials.src, pagesTask); // recompile pages if partials change
 }
 
 // Combined tasks
-export const build = parallel(stylesTask, scriptsTask, pagesTask);
+export const build = parallel(stylesTask, scriptsTask, pagesTask, articlesTask);
 export const dev = series(build, watchTask);
 export default dev;
