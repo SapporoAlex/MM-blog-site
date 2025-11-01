@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#radial-gradient-2);
+        stroke: #000;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: url(#radial-gradient);
+        stroke: #231f20;
+        stroke-linecap: round;
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="42.29" cy="40.09" fx="1.66" fy="70.12" r="50.52" gradientTransform="translate(29.94 -22.33) rotate(30.46) scale(1 1.19)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff3661"/>
+      <stop offset=".28" stop-color="#fb335e"/>
+      <stop offset=".5" stop-color="#f22b58"/>
+      <stop offset=".69" stop-color="#e11e4d"/>
+      <stop offset=".88" stop-color="#ca0b3e"/>
+      <stop offset=".97" stop-color="#bb0035"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-2" cx="41.63" cy="45.99" fx="41.63" fy="45.99" r="26.14" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff16ff"/>
+      <stop offset=".33" stop-color="#fe16fc"/>
+      <stop offset=".53" stop-color="#fb18f4"/>
+      <stop offset=".69" stop-color="#f71ce5"/>
+      <stop offset=".83" stop-color="#f121d1"/>
+      <stop offset=".96" stop-color="#e927b7"/>
+      <stop offset="1" stop-color="#e62aae"/>
+    </radialGradient>
+  </defs>
+  <path class="cls-2" d="M24.48,98.4c10.36,3.58,33.2-20.96,43.44-29.29,6.91-6.21,13.62-12.25,18.76-17.52,7.87-8.22,15.85-17.4,4.84-24.76-12.6-7.85-29.93-11.96-46.62-17.78C34.91,6.22,15.95-1.52,6.78,2.28c-10.65,4.42-2.19,33.01-.45,44.01,3.28,12.76,7.55,48.89,18.06,52.08l.1.03Z"/>
+  <path class="cls-1" d="M42.21,67.24c-.65-1.64-1.61-3.32-3.81-6.7l-7.56-11.87c-.11-.23-2.64-4.41-2.88-4.76q-.95-1.62-1.36-2.25c1.02,3,2.17,6.94,2.78,9.51l2.52,10.55c.8,3.36,1.41,5.47,2.19,7.45l-9.58,2.29c-.23-2.26-.62-4.32-1.41-7.63l-6.05-25.34c-.7-2.92-1.46-5.46-2.2-7.49l12.84-3.06c.84,2.01,1.6,3.47,3.48,6.42l12.3,19.22,2.24-22.69c.34-3.53.36-5.17.16-7.29l12.89-3.08c.27,2.4.64,4.42,1.42,7.68l6.05,25.34c.88,3.7,1.43,5.57,2.19,7.45l-9.58,2.29c-.24-2.31-.59-4.18-1.41-7.63l-2.53-10.6c-.28-1.17-1-4.85-1.27-6.38q-.47-2.61-.59-3.35c-.17,4.05-.23,5.92-.45,7.82l-1.54,14.45c-.39,3.74-.51,6.04-.38,7.65l-8.46,2.02Z"/>
+</svg>
