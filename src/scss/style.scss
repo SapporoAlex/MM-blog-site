@@ -1,6 +1,6 @@
 :root {
-  --text: #c297fd;
-  --text-light: #d9c3f8;
+  --text: #d6b9ff;
+  --text-light: #eee2ff;
   --text-dark: #ab74ff;
   --bg: #360081;
   --bg-dark: #19003b;
@@ -90,8 +90,8 @@ a {
 
 #backToTop {
   position: fixed;
-  bottom: 30px;
-  right: 40px;
+  bottom: 40px;
+  right: 45px;
   display: none;
   padding: 10px 15px;
   border: none;
@@ -111,8 +111,8 @@ a {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   cursor: pointer;
 }
 
@@ -125,7 +125,7 @@ a {
 .up-triangle {
   position: absolute;
   left: 50%;
-  top: 4px;
+  top: 6px;
   transform: translateX(-50%);
   width: 0;
   height: 0;
@@ -137,7 +137,7 @@ a {
 .up-stem {
   position: absolute;
   left: 50%;
-  top: 12px;
+  top: 14px;
   transform: translateX(-50%);
   width: 10px;
   height: 4px;
@@ -147,7 +147,7 @@ a {
 .up-dash {
   position: absolute;
   left: 50%;
-  top: 18px;
+  top: 20px;
   transform: translateX(-50%);
   width: 10px;
   height: 4px;
@@ -156,7 +156,7 @@ a {
 
 .up-text {
   position: absolute;
-  top: 24px;
+  top: 26px;
   left: 50%;
   transform: translateX(-50%);
   color: rgb(253, 246, 255);
@@ -351,15 +351,25 @@ header {
   background-color: var(--bg);
   width: 100%;
   box-shadow: 0 8px 4px rgba(0, 0, 0, 0.267);
+  top: 0;
+  position: sticky;
+  z-index: 1001;
+  border-top: var(--text) 4px solid;
+  border-bottom: var(--text) 4px solid;
 }
 
 .nav-bar {
   margin: 0 auto;
   max-width: 1000px;
-  display:flex;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
-  position: relative;
+  position: sticky; /* ✅ sticky inside the header */
+  top: 0;
+  z-index: 1001;
+  background-color: var(--bg);
+
+
 
 
   .nav-right {
@@ -371,8 +381,6 @@ header {
     margin-right: 30px;
     padding-block: 10px;
     margin-block: 5px;
-    border-top: var(--text) 4px solid;
-    border-bottom: var(--text) 4px solid;
   }
 
   .nav-logo {
@@ -709,14 +717,14 @@ text-shadow:
 .pair-box {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
   flex-wrap: wrap;
 }
 
 .pair-first {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 30px;
 }
 
 .pair-second {
@@ -756,14 +764,19 @@ text-shadow:
 
 @media (max-width: 765px) {
     
+  .header {
+    background-color: transparent;
+  }
+
   .nav-bar {
+    background-color: transparent;
     margin: 0 auto;
     max-width: 1000px;
-    display:flex;
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-    position: relative;
-    align-items: flex-start;
+    top: 0;
+    z-index: 1000;
 
 
     .nav-right {
@@ -774,20 +787,18 @@ text-shadow:
       justify-content: center;
       gap: 20px;
       padding-block: 10px;
-      margin-top: 100px;
-      border-top: var(--text) 4px solid;
-      border-bottom: var(--text) 4px solid;
+      margin-right: 0;
+      margin-top: 50px;
     }
 
     .nav-logo {
       z-index: 1;
-      position:absolute;
-      top:5px;
-      left: 50%;
-      transform: translateX(-50%);
+      display: flex;
       height: auto;
       max-width: 90%;
-      max-height: 110px;
+      max-height: 70px;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 
@@ -821,7 +832,7 @@ text-shadow:
   }
 
 .button {
-  height: 23px;
+  height: 35px;
 }
 
 .footer-links-area {
